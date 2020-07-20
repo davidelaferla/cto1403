@@ -1,0 +1,1188 @@
+<html class="ui-mobile"><head><base href="https://www.webvoipphone.com/webphone_online_demo/softphone.html?wp_serveraddress=voip.mizu-voip.com&amp;wp_username=webphonetest1&amp;wp_password=webphonetest1&amp;wp_callto=testivr3&amp;wp_autoaction=1#page_dialpad">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Softphone</title>
+
+    <link rel="stylesheet" href="css/softphone/index.css">
+<!-- Themes -->
+    <link rel="stylesheet" href="css/softphone/themes/wphone_1.0.css"><!-- instead of: <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />-->
+    <link rel="stylesheet" href="css/softphone/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="css/softphone/jquery.mobile.structure-1.4.2.css">
+    <link rel="stylesheet" href="css/softphone/mainlayout.css">
+
+    <script>window.pageissdk = false;</script>
+    <script src="webphone_api.js?jscodeversion=46"></script><script src="https://www.webvoipphone.com/webphone_online_demo/webphone_config.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/lib/api_helper.js?jscodeversion=46" type="text/javascript"></script>
+
+
+<script src="https://www.webvoipphone.com/webphone_online_demo/js/lib/translations.js?jscodeversion=46" type="text/javascript"></script><link href="https://www.webvoipphone.com/webphone_online_demo/css/softphone/pmodal.css" rel="stylesheet"><link href="https://www.webvoipphone.com/webphone_online_demo/css/video.css" rel="stylesheet"><script src="https://www.webvoipphone.com/webphone_online_demo/js/lib/stringres.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/lib/lib_webphone.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/firebasejs/firebase-app.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/themes.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/firebasejs/firebase-messaging.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_settings.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_newuser.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_smscodeverify.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_messagelist.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_message.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_logview.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_internalbrowser.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_startpage.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_filters.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_filetransfer.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_dialpad.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_contactslist.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_contactdetails.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_callhistorylist.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_callhistorydetails.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_call.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_addeditcontact.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_accounts.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_extra1.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_extra2.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_extra3.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_extra4.js?jscodeversion=46" type="text/javascript"></script><script src="https://www.webvoipphone.com/webphone_online_demo/js/softphone/_extra5.js?jscodeversion=46" type="text/javascript"></script><style id="colortheme"></style></head>
+<body spellcheck="false">
+<div id="loading_bg_txt" style="display: none;">Loading App...</div>
+<div class="app ui-mobile-viewport ui-overlay-b" id="phone_app_main_container" style="display: block;">
+<div id="js_not_enabled" style="display: none;">Enable JavaScript or click the "Allow" button in your browser!!!</div>
+<script type="text/javascript">document.getElementById('js_not_enabled').style.display = 'none'; try{ document.getElementById('phone_app_main_container').style.display = 'none'; } catch(err) {  }</script>
+
+<!-- Settings Page -->
+<div id="page_settings" class="all_app_pages ui-page ui-page-theme-a" data-role="page" data-url="page_settings" tabindex="0" style="background: rgb(29, 29, 29); min-height: auto;">
+    <div id="settings_header" data-role="header" data-theme="b" role="banner" class="ui-header ui-bar-b">
+        <div id="settings_additional_header">
+            <div class="additional_header_left">
+                <button id="btn_back_settings" class="btn_header_back ui-btn" title="Back to previous page" style="display: none;"><b>&lt;</b>&nbsp;_Settings</button><span id="app_name_settings" style="width: 278px;">&nbsp;</span>
+            </div>
+            <div id="settings_page_title" class="additional_header_middle" title="Current selected page">Login</div>
+            <div class="additional_header_right">
+                <a href="#settings_menu" id="btn_settings_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown" aria-haspopup="true" aria-owns="settings_menu" aria-expanded="false" title="Menu">Menu</a>
+                <div style="display: none;" id="settings_menu-placeholder"><!-- placeholder for settings_menu --></div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+            <div class="extra_header" id="extra_header_settings"></div>
+        </div>
+    </div>
+    
+    <div id="page_settings_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <form class="ui-filterable" style="display: none;"><div class="ui-input-search ui-shadow-inset ui-input-has-clear ui-body-b ui-corner-all"><input data-type="search" placeholder="Search Settings"><a href="#" class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a></div></form><ul id="settings_list" class="mlistview ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-b" data-role="listview" data-theme="b" data-divider-theme="b" data-inset="true" data-filter="true" data-filter-placeholder="Search Settings" style="height: 656px;">
+        </ul>
+        <div id="loginpage_container" class="ui-field-contain" style="display: none; height: 656px;">
+            <div id="loginpage">
+                <div id="logologinpage">
+                    <!--<img src="images/logo.png" style="border: 0;">&nbsp;&nbsp;<div></div>-->
+                </div>
+                <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset" style="display: none;"><input name="lp_serveraddress" id="lp_serveraddress" placeholder="Server" value="" type="text" autocapitalize="off"></div>
+                <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input name="lp_username" id="lp_username" placeholder="Username" value="" type="text" autocapitalize="off"></div>
+                <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input name="lp_password" id="lp_password" placeholder="Password" value="" type="text" autocapitalize="off"></div>
+                <button id="lp_btn_login" class="ui-btn-corner-all noshadow ui-btn ui-btn-b" title="Save settings and login">Login</button>
+                <a href="javascript:;" id="a_newuser" target="_blank" class="ui-link">Sign up</a><br>
+                <a href="javascript:;" id="a_forgotpassword" target="_blank" class="ui-link">Forgot password</a>
+                <button id="lp_btn_custom" class="ui-btn-corner-all noshadow ui-btn ui-btn-b" style="display:none;">_Custom</button>
+            </div>
+        </div>
+        <div id="settings_copyright" style="display: none;">
+            <a href="https://www.mizu-voip.com/Software/WebPhone.aspx" target="_blank" title="Provider" class="ui-link">Powered by Mizutech WebPhone ®</a>
+        </div>
+        <div id="settings_engine" style="display: none;">
+            <a href="javascript:;" target="_blank" id="btn_settings_engine" class="ui-btn noshadow btn_engine"><span id="settings_engine_title" class="engine_title">Choose engine</span><br><span id="settings_engine_msg" class="engine_msg"></span></a>
+            <a href="javascript:;" id="btn_settings_engine_close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext"></a>
+        </div>
+    </div>
+<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="settings_menu-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="settings_menu-popup"><div id="settings_menu" class="options_menu ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-role="popup">
+                    <ul id="settings_menu_ul" data-role="listview" data-inset="true" data-icon="false" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                        <!--<li data-role="divider" data-theme="b">Choose an action</li>
+                        <li id="test_id"><a href="javascript:;" id="menuitem_test">View details</a></li>-->
+                    </ul>
+                </div></div></div>
+<!-- END Settings Page -->
+
+<!-- Dialpad Page -->
+<div id="page_dialpad" class="all_app_pages ui-page ui-page-theme-b ui-page-active" data-role="page" data-theme="b" data-url="page_dialpad" tabindex="0" style="background: rgb(29, 29, 29); min-height: auto;">
+    <!--Notification panel-->
+    <div data-role="panel" id="dialpad_not" class="notification_panel ui-panel ui-panel-position-left ui-panel-display-overlay ui-panel-closed ui-body-b ui-panel-animate" data-position="left" data-display="overlay" data-theme="b">
+        <div class="ui-panel-inner"><div class="not_panel_title">_Notifications</div><ul class="notification_list ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-b" id="dialpad_notification_list" data-role="listview" data-inset="true" data-icon="false" data-theme="b" style="height: 482px;"></ul><a href="javascript:;" data-rel="close" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-b ui-btn-inline not_close_btn">_Close</a></div>
+        
+        
+    </div>
+    <!--End notification panel-->
+    <div id="dialpad_header" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        <div id="dialpad_engine" style="display: none;">
+            <a href="javascript:;" target="_blank" id="btn_dialpad_engine" class="ui-btn noshadow btn_engine"><span id="dialpad_engine_title" class="engine_title">Choose engine</span><br><span id="dialpad_engine_msg" class="engine_msg"></span></a>
+            <a href="javascript:;" id="btn_dialpad_engine_close" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext"></a>
+        </div>
+        <div id="dialpad_additional_header">
+            <div id="headertext_settings" style="display: none;" class="header_text"></div>
+            <div class="additional_header_left" id="dialpad_additional_header_left" style="cursor: pointer; width: 65%;">
+                <div id="dialpad_presence"><img src="https://www.webvoipphone.com/webphone_online_demo/images/presence_grey.png"></div><div><span id="app_name_dialpad" style="width: 802px;">WebPhone</span></div>
+            </div>
+            <!--<div class="notification" id="dialpad_notification"></div>-->
+            <div class="additional_header_right" id="dialpad_additional_header_right">
+                <span id="dialpad_not_counter" class="ui-li-count ui-btn-corner-all not_btn_counter" style="display: none;"></span>
+                <a href="#dialpad_not" id="dialpad_not_btn" class="ui-btn ui-shadow ui-btn-inline ui-mini ui-icon-info ui-btn-icon-notext not_header_btn" style="display: none;">Clear</a>
+                <a href="#dialpad_menu" id="btn_dialpad_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown" aria-haspopup="true" aria-owns="dialpad_menu" aria-expanded="false" title="Menu">Menu</a>
+
+                <div style="display: none;" id="dialpad_menu-placeholder"><!-- placeholder for dialpad_menu --></div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+        <div class="status_container">
+            <img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_encrypt.png" class="img_encrypt" title="Encrypted"><div class="status" id="status_dialpad" title="Events and status messages" style="color: rgb(255, 255, 255); width: 1168px;">Registering...</div>
+            <div class="curr_user" id="curr_user_dialpad" title="Account username">webphonetest1</div>
+        </div>
+        <div class="clear_float"><!--//--></div>
+        <div class="navigation_bar ui-navbar" data-role="navbar" data-iconpos="top" role="navigation">
+            <ul id="ul_nav_dp" class="ui-grid-b">
+                <li class="ui-block-a"><a id="nav_dp_dialpad" data-transition="slide" data-icon="" class="ui-btn-active ui-state-persist ui-link ui-btn" title="Dialpad"><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_dialpad.png" alt="dialpad"></a></li>
+                <li id="li_nav_dp_ct" class="ui-block-b"><a id="nav_dp_contacts" data-transition="slide" data-icon="" class="ui-link ui-btn" title="Contacts"><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_contacts.png" alt="contacts"></a></li>
+                <li id="li_nav_dp_ch" class="ui-block-c"><a id="nav_dp_callhistory" data-transition="slide" data-icon="" class="ui-link ui-btn" title="Call History"><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_callog.png" alt="call history"></a></li>
+            </ul>
+        </div>
+        <div class="extra_header" id="extra_header_dialpad"></div>
+    </div>
+    <div id="page_dialpad_content" role="main" class="ui-content">
+        <div class="ui-grid-a" id="phone_number_container">
+            <div class="ui-block-a"><div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input name="" id="phone_number" placeholder="Phone Nr or SIP URI" value="" type="text" class="ui-input-text" autocapitalize="off" title="Enter here phone number, sip account username or SIP URI"></div></div>
+            <div class="ui-block-b"><button id="btn_backspace" class="noshadow ui-btn ui-shadow ui-corner-all" style="display: none;"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_backspace_txt.png" id="btn_backspace_img" alt="backspace"></button></div>
+            <div id="disprate_container" style="display: none;">&nbsp;</div>
+        </div>
+        
+        <ul id="dialpad_list" class="mlistview ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-b" data-role="listview" data-split-icon="bars" data-split-theme="b" data-theme="b" data-divider-theme="b" data-inset="true" style="height: 133px;"><li data-theme="b" class="ui-li-has-alt ui-first-child ui-last-child"><a id="recentitem_0" class="ch_anchor mlistitem ui-btn ui-btn-b"><div class="item_container"><div class="ch_type"><img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_call_outgoing_failed.png"></div><div class="ch_numberonly">testivr3</div><div class="ch_data"><div class="ch_name"></div><div class="ch_number"></div></div><div class="ch_presence"></div><div class="ch_date">Jun, 05&nbsp;&nbsp;2020&nbsp;&nbsp;13:46</div></div></a><a id="recentmenu_0" class="ch_menu mlistitem ui-btn ui-btn-icon-notext ui-icon-bars ui-btn-b" title="Actions"></a></li></ul>
+       
+        <div class="clear_float"><!--//--></div>
+        <div class="separator_color_bg"><!--//--></div>
+
+
+        <div class="ui-grid-b" id="dialpad_btn_grid">
+            <div class="ui-block-a"><button id="btn_dp_1" class="noshadow ui-btn" style="height: auto;"><span class="number">1</span><span class="smalltext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+            <div class="ui-block-b"><button id="btn_dp_2" class="noshadow ui-btn" style="height: auto;"><span class="number">2</span><span class="smalltext">ABC</span></button></div>
+            <div class="ui-block-c"><button id="btn_dp_3" class="noshadow ui-btn" style="height: auto;"><span class="number">3</span><span class="smalltext">DEF&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+
+            <div class="ui-block-a"><button id="btn_dp_4" class="noshadow ui-btn" style="height: auto;"><span class="number">4</span><span class="smalltext">GHI&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+            <div class="ui-block-b"><button id="btn_dp_5" class="noshadow ui-btn" style="height: auto;"><span class="number">5</span><span class="smalltext">JKL&nbsp;</span></button></div>
+            <div class="ui-block-c"><button id="btn_dp_6" class="noshadow ui-btn" style="height: auto;"><span class="number">6</span><span class="smalltext">MNO&nbsp;&nbsp;</span></button></div>
+
+            <div class="ui-block-a"><button id="btn_dp_7" class="noshadow ui-btn" style="height: auto;"><span class="number">7</span><span class="smalltext">PQRS</span></button></div>
+            <div class="ui-block-b"><button id="btn_dp_8" class="noshadow ui-btn" style="height: auto;"><span class="number">8</span><span class="smalltext">TUV</span></button></div>
+            <div class="ui-block-c"><button id="btn_dp_9" class="noshadow ui-btn" style="height: auto;"><span class="number">9</span><span class="smalltext">WXYZ</span></button></div>
+
+            <div class="ui-block-a"><button id="btn_dp_ast" class="noshadow ui-btn" style="height: auto;"><span id="dialpad_asterisk" class="number">∗</span><span class="smalltext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+            <div class="ui-block-b"><button id="btn_dp_0" class="noshadow ui-btn" style="height: auto;"><span class="number">0</span><span class="smalltext">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+            <div class="ui-block-c"><button id="btn_dp_diez" class="noshadow ui-btn" style="height: auto;"><span class="number">#</span><span class="smalltext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+
+            <div class="separator_color_bg"><!--//--></div>
+        </div>
+    </div>
+    <!--<div data-role="footer" data-position="fixed" data-tap-toggle="false" id="dialpad_footer">-->
+    <div data-role="footer" data-tap-toggle="false" id="dialpad_footer" role="contentinfo" class="ui-footer ui-bar-inherit">
+        <div class="ui-grid-b" id="dialpad_call_grid">
+            <!--<div class="ui-block-a" id="btn_voicemail"><button class="ui-btn noshadow"><img src="images/btn_voicemail_txt.png" alt="voicemail" /></button></div>-->
+            <div class="ui-block-a" id="btn_showhide_numpad" title="Numpad/Dialpad">
+                <button class="noshadow ui-btn"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_numpad_txt.png" id="btn_showhide_numpad_img" alt="numpad"></button>
+                <span id="dialpad_voicemail_counter" class="ui-li-count ui-btn-corner-all" style="display: none;"></span>
+            </div>
+            <div class="ui-block-b" id="btn_call" title="Initiate call"><button class="noshadow ui-btn ui-btn-c"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_call_txt.png" id="dp_btn_call_txt" alt="call"></button></div>
+            <div class="ui-block-c" id="btn_message" title="Message">
+                <button class="noshadow ui-btn"><img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_message.png" id="btn_message_img" alt="message"></button>
+                <span id="dialpad_message_counter" class="ui-li-count ui-btn-corner-all" style="display: none;"></span>
+            </div>
+        </div>
+
+        <div id="footertext_dialpad" style="display: none;" class="header_text"></div>
+        <div id="advert_dialpad" class="advert_container">
+            <iframe frameborder="0" width="100%" scrolling="no" src="" name="advert_frame" id="advert_dialpad_frame"></iframe>
+        </div>
+    </div>
+<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="dialpad_menu-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="dialpad_menu-popup"><div id="dialpad_menu" class="options_menu ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-role="popup">
+                    <ul id="dialpad_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a">
+                    </ul>
+                </div></div></div>
+<!-- END Dialpad Page -->
+
+
+<!-- ContactsList Page -->
+<div id="page_contactslist" class="all_app_pages" data-role="page" data-url="page_contactslist" style="min-height: auto;">
+    <!--Notification panel-->
+    <div data-role="panel" id="contactslist_not" class="notification_panel" data-position="left" data-display="overlay" data-theme="b">
+        <div class="not_panel_title">_Notifications</div>
+        <ul class="notification_list" id="contactslist_notification_list" data-role="listview" data-inset="true" data-icon="false" data-theme="b"></ul>
+        <a href="javascript:;" data-rel="close" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-b ui-btn-inline not_close_btn">_Close</a>
+    </div>
+    <!--End notification panel-->
+    <div id="contactslist_header" data-role="header" data-theme="b">
+        <div id="contactslist_additional_header">
+            <div id="headertext_contactslist" style="display: none;" class="header_text"></div>
+            <div class="additional_header_left" id="contactslist_additional_header_left" style="width: 35%;">
+                <div id="contactslist_presence"><img src="https://www.webvoipphone.com/webphone_online_demo/images/presence_grey.png"></div><div><span id="app_name_contactslist" style="width: 30px;"></span></div>
+            </div>
+            <div id="ctlist_title" class="additional_header_middle">Contacts</div><!--<div class="notification" id="contactslist_notification"></div>-->
+            <div class="additional_header_right" id="contactslist_additional_header_right">
+                <span id="contactslist_not_counter" class="ui-li-count ui-btn-corner-all not_btn_counter" style="display: none;"></span>
+                <a href="#contactslist_not" id="contactslist_not_btn" class="ui-btn ui-shadow ui-btn-inline ui-mini ui-icon-info ui-btn-icon-notext not_header_btn" style="display: none;">Clear</a>
+                <a href="#contactslist_menu" id="btn_contactslist_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="contactslist_menu" class="options_menu" data-role="popup">
+                    <ul id="contactslist_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+        <div class="status_container">
+            <img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_encrypt.png" class="img_encrypt" title="Encrypted"><div class="status" id="status_contactslist" style="color: rgb(255, 255, 255);">Registering...</div>
+            <div class="curr_user" id="curr_user_contactslist">&nbsp;</div>
+        </div>
+        <div class="navigation_bar" data-role="navbar" data-iconpos="top">
+            <ul id="ul_nav_ct">
+                <li><a id="nav_ct_dialpad" data-transition="slide" data-direction="reverse" data-icon=""><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_dialpad.png" alt="dialpad"></a></li>
+                <li><a id="nav_ct_contacts" data-transition="slide" data-icon="" class="ui-btn-active ui-state-persist"><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_contacts.png" alt="contacts"></a></li>
+                <li id="li_nav_ct_ch"><a id="nav_ct_callhistory" data-transition="slide" data-icon=""><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_callog.png" alt="call history"></a></li>
+            </ul>
+        </div>
+        <div class="extra_header" id="extra_header_contactslist"></div>
+    </div>
+    <div role="main" class="ui-content" id="page_contactslist_content" data-theme="b" data-content-theme="b">
+        <div id="togglecontact_container" style="display: none;">
+        <select id="togglecontact" name="togglecontact" data-role="flipswitch">
+            <option value="off">Server contacts</option>
+            <option value="on">All contacts</option>
+        </select>
+    </div>
+        <ul id="contactslist_list" class="mlistview" data-role="listview" data-theme="b" data-divider-theme="b" data-inset="true" data-filter="true" data-filter-placeholder="Search Contacts" data-icon="false" data-autodividers="true" style="height: 634px;">
+            <!--<li id="contact_0"><a href="javascript:void(0)" data-transition="slide">John Smith</a></li>-->
+        </ul>
+    </div>
+    <div id="footertext_contactslist" style="display: none;" class="header_text"></div>
+    <div id="advert_contactslist" class="advert_container">
+        <iframe frameborder="0" width="100%" scrolling="no" src="" name="advert_frame" id="advert_contactslist_frame"></iframe>
+    </div>
+</div>
+<!-- END ContactsList Page -->
+
+
+<!-- ContactDetails Page -->
+<div id="page_contactdetails" class="all_app_pages" data-role="page" data-url="page_contactdetails">
+    <div id="contactdetails_header" data-role="header" data-theme="b">
+        <div id="contactdetails_additional_header">
+            <div class="additional_header_left">
+                <a id="ctdetails_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;All Contacts</a>
+            </div>
+            <div id="contactdetails_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#contactdetails_menu" id="btn_contactdetails_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="contactdetails_menu" class="options_menu" data-role="popup">
+                    <ul id="contactdetails_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_contactdetails_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        
+        <!--<div id="contact_name"><p>John Smith</p><div id="contact_favorite"><img id="btn_contactdetails_favorite" src="images/btn_star_off_normal_holo_light.png" /></div></div>
+        <div id="ct_entry_0" class="cd_container">
+            <div id="cd_call_1" class="cd_call">
+                <div class="cd_data">
+                    <div class="cd_type">Call home</div>
+                    <div class="cd_number">40123456789</div>
+                </div>
+                <div class="cd_icon">
+                    <img src="images/icon_call.png" />
+                </div>
+            </div>
+        </div>
+        <div id="ct_entry_1" class="cd_container">
+            <div id="cd_msg_1" class="cd_call">
+                <div class="cd_data">
+                    <div class="cd_type">Send message</div>
+                    <div class="cd_number">40123456789</div>
+                </div>
+                <div class="cd_icon">
+                    <img src="images/icon_message.png" />
+                </div>
+            </div>
+        </div>
+        <div id="ct_edit_entry" class="cd_container">
+            <div id="ct_edit_entry_button" class="cd_call">
+                <div class="cd_button">Edit contact</div>
+            </div>
+        </div>
+        <div id="ct_delete_entry" class="cd_container">
+            <div id="ct_delete_entry_button" class="cd_call">
+                <div class="cd_button">Delete contact</div>
+            </div>
+        </div>
+        <div id="ct_allcontacts_entry" class="cd_container">
+            <div id="ct_allcontacts_entry_button" class="cd_call">
+                <div class="cd_button">All contacts</div>
+            </div>
+        </div>-->
+    </div>
+</div>
+<!-- END ContactDetails Page -->
+
+
+<!-- CallHistoryList Page -->
+<div id="page_callhistorylist" class="all_app_pages" data-role="page" data-url="page_callhistorylist" style="min-height: auto;">
+    <!--Notification panel-->
+    <div data-role="panel" id="callhistorylist_not" class="notification_panel" data-position="left" data-display="overlay" data-theme="b">
+        <div class="not_panel_title">_Notifications</div>
+        <ul class="notification_list" id="callhistorylist_notification_list" data-role="listview" data-inset="true" data-icon="false" data-theme="b"></ul>
+        <a href="javascript:;" data-rel="close" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-b ui-btn-inline not_close_btn">_Close</a>
+    </div>
+    <!--End notification panel-->
+    <div id="callhistorylist_header" data-role="header" data-theme="b">
+        <div id="callhistorylist_additional_header">
+            <div id="headertext_callhistorylist" style="display: none;" class="header_text"></div>
+            <div class="additional_header_left" id="callhistorylist_additional_header_left" style="width: 35%;">
+                <div id="callhistorylist_presence"><img src="https://www.webvoipphone.com/webphone_online_demo/images/presence_grey.png"></div><div><span id="app_name_callhistorylist" style="width: 30px;"></span></div>
+            </div>
+            <div id="chlist_title" class="additional_header_middle">Call history</div><!--<div class="notification" id="callhistorylist_notification"></div>-->
+            <div class="additional_header_right" id="callhistorylist_additional_header_right">
+                <span id="callhistorylist_not_counter" class="ui-li-count ui-btn-corner-all not_btn_counter" style="display: none;"></span>
+                <a href="#callhistorylist_not" id="callhistorylist_not_btn" class="ui-btn ui-shadow ui-btn-inline ui-mini ui-icon-info ui-btn-icon-notext not_header_btn" style="display: none;">Clear</a>
+                <a href="#callhistorylist_menu" id="btn_callhistorylist_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="callhistorylist_menu" class="options_menu" data-role="popup">
+                    <ul id="callhistorylist_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+        <div class="status_container">
+            <img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_encrypt.png" class="img_encrypt" title="Encrypted"><div class="status" id="status_callhistorylist" style="color: rgb(255, 255, 255);">Registering...</div>
+            <div class="curr_user" id="curr_user_callhistorylist">&nbsp;</div>
+        </div>
+        <div class="navigation_bar" data-role="navbar" data-iconpos="top">
+            <ul id="ul_nav_ch">
+                <li><a id="nav_ch_dialpad" data-transition="slide" data-direction="reverse" data-icon=""><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_dialpad.png" alt="dialpad"></a></li>
+                <li id="li_nav_ch_ct"><a id="nav_ch_contacts" data-transition="slide" data-direction="reverse" data-icon=""><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_contacts.png" alt="contacts"></a></li>
+                <li><a id="nav_ch_callhistory" data-transition="slide" data-icon="" class="ui-btn-active ui-state-persist"><img src="https://www.webvoipphone.com/webphone_online_demo/images/tab_callog.png" alt="call history"></a></li>
+            </ul>
+        </div>
+        <div class="extra_header" id="extra_header_callhistorylist"></div>
+    </div>
+    <div role="main" class="ui-content" id="page_callhistorylist_content" data-theme="b" data-content-theme="b">
+        <ul id="callhistorylist_list" class="mlistview" data-role="listview" data-theme="b" data-divider-theme="b" data-inset="true" data-icon="false" style="height: 687px;">
+            <!--<li id="ch_item_0" data-theme="b"><a href="javascript:void(0)" class="ch_anchor" data-transition="slide">
+        	<div class="item_container">
+                    <div class="ch_type">
+                        <img src="images/icon_call_outgoing.png" />
+                    </div>
+                    <div class="ch_data">
+                	<div class="ch_name">John Smith</div>
+                        <div class="ch_number">40123456789</div>
+                        <div class="ch_duration">Duration: 02:45</div>
+                    </div>
+                    <div class="ch_date">Aug, 26 2013 10:55</div>
+		</div>
+            </a></li>-->
+        </ul>
+    </div>
+    <div id="footertext_callhistorylist" style="display: none;" class="header_text"></div>
+    <div id="advert_callhistorylist" class="advert_container">
+        <iframe frameborder="0" width="100%" scrolling="no" src="" name="advert_frame" id="advert_callhistorylist_frame"></iframe>
+    </div>
+</div>
+<!-- END CallHistoryList Page -->
+
+
+<!-- CallhistoryDetails Page -->
+<div id="page_callhistorydetails" class="all_app_pages" data-role="page" data-url="page_callhistorydetails">
+    <div id="callhistorydetails_header" data-role="header" data-theme="b">
+        <div id="callhistorydetails_additional_header">
+            <div class="additional_header_left">
+                <a id="chdetails_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Call history</a>
+            </div>
+            <div id="callhistorydetails_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#callhistorydetails_menu" id="btn_callhistorydetails_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="callhistorydetails_menu" class="options_menu" data-role="popup">
+                    <ul id="callhistorydetails_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_callhistorydetails_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <div id="ch_contact_name">John Smith</div>
+        
+        <div id="ch_entry" class="ch_container">
+            <div id="ch_call_entry" class="ch_call">
+            	<div class="ch_data">
+                    <div class="ch_type">Outgoing call</div>
+                    <div class="ch_number">40123456789</div>
+                </div>
+                <div class="ch_call_icon">
+                    <img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_call.png" alt="call">
+                </div>
+            </div>
+            <div id="ch_msg_entry" class="ch_msg">
+            	<div class="ch_msg_icon">
+                    <img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_message.png" alt="message">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CallhistoryDetails Page -->
+
+
+<!-- Call Page -->
+<div id="page_call" class="all_app_pages ui-page ui-page-theme-b" data-role="page" data-theme="b" data-url="page_call" tabindex="0" style="background: rgb(29, 29, 29); min-height: auto;">
+    <div id="call_header" data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        <div id="call_additional_header">
+            <div class="additional_header_left">
+                <span id="app_name_call" style="width: 278px;">WebPhone</span>
+            </div>
+            <div class="additional_header_right">
+                <a href="#call_menu" id="btn_call_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-inline="true" data-transition="slidedown" aria-haspopup="true" aria-owns="call_menu" aria-expanded="false" title="Menu">Menu</a>
+
+                <div style="display: none;" id="call_menu-placeholder"><!-- placeholder for call_menu --></div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+        <div class="status_container">
+            <img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_encrypt.png" class="img_encrypt" title="Encrypted"><div id="calledcaller" title="Caller/called party">testivr3</div>
+            <div id="call_duration" title="Call duration"></div>
+            <div id="status_call" title="Call status and event messages">&nbsp;</div>
+        </div>
+        <div class="clear_float"><!--//--></div>
+    </div>
+    <div id="page_call_content" role="main" class="ui-content" style="height: 471px;">
+        <div id="mlcontainer" style="display: none;">
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+            <div id="ml_buttons"></div>
+        </div>
+        
+        <div id="audiodevice_container" style="display: none;"><button id="btn_audiodevice" class="noshadow ui-btn ui-btn-inline ui-corner-all">Audio devices</button></div>
+        <div id="volumecontrols" style="display: none;">
+            <div class="volume_labels">Volume in:</div>
+            <div class="volume_sliders"><div class="ui-slider ui-mini"><input name="volumein" id="volumein" data-mini="true" min="0" max="100" value="50" type="number" data-type="range" class="ui-shadow-inset ui-body-inherit ui-corner-all ui-mini ui-slider-input"><div role="application" class="ui-slider-track ui-shadow-inset ui-bar-inherit ui-corner-all ui-mini"><a href="#" class="ui-slider-handle ui-btn ui-shadow" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50" title="50" aria-labelledby="volumein-label" style="left: 50%;"></a></div></div></div>
+            <div style="float: left; width: 90%; clear: both;"><!--//--></div>
+            <div class="volume_labels">Volume out:</div>
+            <div class="volume_sliders"><div class="ui-slider ui-mini"><input name="volumeout" id="volumeout" data-mini="true" min="0" max="100" value="50" type="number" data-type="range" class="ui-shadow-inset ui-body-inherit ui-corner-all ui-mini ui-slider-input"><div role="application" class="ui-slider-track ui-shadow-inset ui-bar-inherit ui-corner-all ui-mini"><a href="#" class="ui-slider-handle ui-btn ui-shadow" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50" title="50" aria-labelledby="volumeout-label" style="left: 50%;"></a></div></div></div>
+        </div>
+        <div id="contact_image" style="height: 366px;">
+            <div id="contact_details">
+                <img src="https://www.webvoipphone.com/webphone_online_demo/images/default_contact_img.png" id="contact_image_img" alt="contact image" style="margin-top: 135px;">
+                <div id="page_call_additional_info"></div>
+                <div id="page_call_peer_details"></div>
+                <div id="display_notmain_account" style="display: none;"></div>
+            </div>
+            <div id="video_container" style="display: none;">
+<!--
+            <div id="video_container">
+                <div id="div_video">
+                    <div id="div_video_remote">
+                        <video class="video" width="100%" height="100%" id="video_remote" autoplay="autoplay"></video>
+                    </div>
+                    <div id="div_video_local_wrapper">
+                        <iframe allow="microphone; camera" class="previewvideo"> </iframe>
+                        <div id="div_video_local" class="previewvideo">
+                            <video class="video" width="100%" height="100%" id="video_local" autoplay="autoplay" muted="true"></video>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+        
+        <div class="clear_float"><!--//--></div>
+        
+        <div id="numpad">
+            <div id="numpad_number_container" style="height: 65px; line-height: 65px;">
+                <span id="numpad_number"></span>
+            </div>
+    
+            <div class="separator_color_bg"><!--//--></div>
+            
+            <div class="ui-grid-b" id="numpad_btn_grid">
+                <div class="ui-block-a"><button id="numpad_btn_dp_1" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">1</span><span class="smalltext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+                <div class="ui-block-b"><button id="numpad_btn_dp_2" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">2</span><span class="smalltext">ABC</span></button></div>
+                <div class="ui-block-c"><button id="numpad_btn_dp_3" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">3</span><span class="smalltext">DEF&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+
+                <div class="ui-block-a"><button id="numpad_btn_dp_4" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">4</span><span class="smalltext">GHI&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+                <div class="ui-block-b"><button id="numpad_btn_dp_5" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">5</span><span class="smalltext">JKL&nbsp;</span></button></div>
+                <div class="ui-block-c"><button id="numpad_btn_dp_6" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">6</span><span class="smalltext">MNO&nbsp;&nbsp;</span></button></div>
+
+                <div class="ui-block-a"><button id="numpad_btn_dp_7" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">7</span><span class="smalltext">PQRS</span></button></div>
+                <div class="ui-block-b"><button id="numpad_btn_dp_8" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">8</span><span class="smalltext">TUV</span></button></div>
+                <div class="ui-block-c"><button id="numpad_btn_dp_9" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">9</span><span class="smalltext">WXYZ</span></button></div>
+
+                <div class="ui-block-a"><button id="numpad_btn_dp_ast" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">∗</span><span class="smalltext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+                <div class="ui-block-b"><button id="numpad_btn_dp_0" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">0</span><span class="smalltext">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+                <div class="ui-block-c"><button id="numpad_btn_dp_diez" class="noshadow ui-btn" style="height: 74.1875px;"><span class="number">#</span><span class="smalltext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button></div>
+            </div>
+            <div class="separator_color_bg"><!--//--></div>
+        </div>
+        
+        <div class="clear_float"><!--//--></div>
+        <div class="ui-grid-b" id="acceptreject_layout" style="display: none;">
+            <div class="ui-block-a"><button data-theme="b" id="btn_accept" class="noshadow ui-btn ui-btn-b ui-shadow ui-corner-all" title="Accept call"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_call_txt.png" alt="accept"></button></div>
+            <!--<div class="ui-block-b"><button data-theme="b" class="noshadow" onClick="Mizulayout.Ignore();"><img src="images/btn_ignore_txt.png" /></button></div>-->
+            <div class="ui-block-c"><button data-theme="b" id="btn_reject" class="noshadow ui-btn ui-btn-b ui-shadow ui-corner-all" title="Reject call"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_hangup_txt.png" alt="reject"></button></div>
+        </div>
+        <div class="ui-grid-b" id="mline_layout">
+            <div class="ui-block-a"><button data-theme="b" id="btn_ml_accept" class="noshadow ui-btn ui-btn-b ui-shadow ui-corner-all" title="Accept call"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_call_txt.png" alt="accept"></button></div>
+            <div class="ui-block-b"><button data-theme="b" id="btn_ml_reject" class="noshadow ui-btn ui-btn-b ui-shadow ui-corner-all"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_hangup_txt.png"></button></div>
+            <div class="ui-block-c"><button data-theme="b" id="btn_ml_more" class="noshadow ui-btn ui-btn-b ui-shadow ui-corner-all" title="More"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_menu_txt.png"></button></div>
+        </div>
+        
+        <div class="clear_float"><!--//--></div>
+        
+        <div id="hangup_layout" style="display: none;">
+            <button data-theme="d" class="noshadow ui-btn ui-btn-d ui-shadow ui-corner-all" id="btn_hangup" title="Close call"><img id="btn_hangup_img" src="https://www.webvoipphone.com/webphone_online_demo/images/btn_close_txt.png" alt="hangup"></button>
+        </div>
+        
+        <div class="separator_color_bg"><!--//--></div>
+        
+        <!--<div id="callfunctions_layout">
+            <div class="callfunc_btn_container">
+                <button class="ui-btn callfunc_btn noshadow" data-theme="b" id="btn_[REPLACESTR]">
+                    <img src="images/btn_[REPLACESTR]_txt.png" />
+                    <span class="callfunc_status" id="[REPLACESTR]_status" >&nbsp;</span>
+                </button>
+            </div>
+        </div>-->
+        <div id="callfunctions_layout" style="display: none;"></div>
+    </div>
+<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="call_menu-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="call_menu-popup"><div id="call_menu" class="options_menu ui-popup ui-body-a ui-overlay-shadow ui-corner-all" data-role="popup" data-theme="a">
+                    <ul data-role="listview" id="call_menu_ul" data-inset="true" data-theme="a" data-icon="false" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a">
+                    </ul>
+                </div></div></div>
+<!-- END Call Page -->
+
+<!-- AddEditContact Page -->
+<div id="page_addeditcontact" class="all_app_pages" data-role="page" data-url="page_addeditcontact">
+    <div id="addeditcontact_header" data-role="header" data-theme="b">
+        <div id="addeditcontact_additional_header">
+            <div class="additional_header_left">
+                <a id="addeditct_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+
+            <div id="addeditct_title" class="additional_header_middle">_Contact</div>
+            
+            <div class="additional_header_right">
+                <a href="#addeditcontact_menu" id="btn_addeditcontact_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="addeditcontact_menu" class="options_menu" data-role="popup">
+                    <ul id="addeditcontact_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_addeditcontact_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <div id="aec_name_section">
+            <div class="aec_label" id="aec_label_name">Name</div>
+            <input type="text" id="aec_name" name="aec_firstname" data-theme="a" placeholder="Name">
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+            <div id="aec_add_section">
+                <div class="aec_label" id="aec_label_phone">Phone</div>
+                <div id="aec_add"><button id="btn_add_aec" class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-plus ui-btn-icon-notext">Add</button></div>
+            </div>
+        </div>
+        <div id="aec_number_fields">
+            <div id="aec_entry_0" style="display: none;" class="aec_numbers"><button id="btn_type_aec_0" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_0" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_0" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_1" style="display: none;" class="aec_numbers"><button id="btn_type_aec_1" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_1" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_1" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_2" style="display: none;" class="aec_numbers"><button id="btn_type_aec_2" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_2" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_2" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_3" style="display: none;" class="aec_numbers"><button id="btn_type_aec_3" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_3" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_3" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_4" style="display: none;" class="aec_numbers"><button id="btn_type_aec_4" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_4" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_4" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_5" style="display: none;" class="aec_numbers"><button id="btn_type_aec_5" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_5" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_5" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_6" style="display: none;" class="aec_numbers"><button id="btn_type_aec_6" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_6" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_6" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_7" style="display: none;" class="aec_numbers"><button id="btn_type_aec_7" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_7" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_7" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_8" style="display: none;" class="aec_numbers"><button id="btn_type_aec_8" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_8" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_8" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_9" style="display: none;" class="aec_numbers"><button id="btn_type_aec_9" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_9" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_9" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_10" style="display: none;" class="aec_numbers"><button id="btn_type_aec_10" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_10" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_10" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_11" style="display: none;" class="aec_numbers"><button id="btn_type_aec_11" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_11" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_11" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_12" style="display: none;" class="aec_numbers"><button id="btn_type_aec_12" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_12" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_12" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_13" style="display: none;" class="aec_numbers"><button id="btn_type_aec_13" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_13" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_13" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_14" style="display: none;" class="aec_numbers"><button id="btn_type_aec_14" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_14" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_14" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_15" style="display: none;" class="aec_numbers"><button id="btn_type_aec_15" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_15" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_15" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_16" style="display: none;" class="aec_numbers"><button id="btn_type_aec_16" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_16" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_16" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_17" style="display: none;" class="aec_numbers"><button id="btn_type_aec_17" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_17" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_17" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_18" style="display: none;" class="aec_numbers"><button id="btn_type_aec_18" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_18" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_18" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            <div id="aec_entry_19" style="display: none;" class="aec_numbers"><button id="btn_type_aec_19" class="aec_phonetype ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b noshadow">Mobile_</button><input id="number_aec_19" type="text" name="number" data-theme="a" autocapitalize="off"><div id="btn_minus_aec_19" class="minus_btn"><button class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-minus ui-btn-icon-notext">Remove</button></div></div>
+            
+            <div class="separator_line_thick" id="aec_details_separator" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+            <div id="aec_add_deatils">
+                <div id="aec_label_details">Add field_</div>
+                <div id="aec_add_detailsbtn"><button id="btn_add_aec_details" class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-plus ui-btn-icon-notext">Add</button></div>
+            </div>
+            <!--email, address, notes, website-->
+            <div id="aec_entry_email" class="aec_details" style="display: none;"><label>Email_:</label><input id="number_aec_email" type="text" name="number" data-theme="a" autocapitalize="off"></div>
+            <div id="aec_entry_address" class="aec_details" style="display: none;"><label>Address_:</label><input id="number_aec_address" type="text" name="number" data-theme="a"></div>
+            <div id="aec_entry_notes" class="aec_details" style="display: none;"><label>Notes_:</label><input id="number_aec_notes" type="text" name="number" data-theme="a" autocapitalize="off"></div>
+            <div id="aec_entry_website" class="aec_details" style="display: none;"><label>Website_:</label><input id="number_aec_website" type="text" name="number" data-theme="a" autocapitalize="off"></div>
+        </div>
+    </div>
+    <!--<div id="aec_footer" data-role="footer" data-theme="b" data-position="fixed">-->
+    <div id="aec_footer" data-role="footer" data-theme="b">
+        <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        <button id="btn_save_aec" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Save</button>
+        <button id="btn_revert_aec" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Cancel</button>
+    </div>
+</div>
+<!-- END AddEditContact Page -->
+
+<!-- MessageList Page -->
+<div id="page_messagelist" class="all_app_pages" data-role="page" data-url="page_messagelist">
+    <!--Notification panel-->
+    <div data-role="panel" id="messagelist_not" class="notification_panel" data-position="left" data-display="overlay" data-theme="b">
+        <div class="not_panel_title">_Notifications</div>
+        <ul class="notification_list" id="messagelist_notification_list" data-role="listview" data-inset="true" data-icon="false" data-theme="b"></ul>
+        <a href="javascript:;" data-rel="close" class="ui-btn ui-mini ui-shadow ui-corner-all ui-btn-b ui-btn-inline not_close_btn">_Close</a>
+    </div>
+    <!--End notification panel-->
+    <div id="messagelist_header" data-role="header" data-theme="b">
+        <div id="messagelist_additional_header">
+            <div id="messagelist_additional_header_left" class="additional_header_left">
+                <a id="msglist_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="msglist_title" class="additional_header_middle">Mesages</div><!--<div class="notification" id="messagelist_notification"></div>-->
+            <div class="additional_header_right" id="messagelist_additional_header_right">
+                <span id="messagelist_not_counter" class="ui-li-count ui-btn-corner-all not_btn_counter" style="display: none;"></span>
+                <a href="#messagelist_not" id="messagelist_not_btn" class="ui-btn ui-shadow ui-btn-inline ui-mini ui-icon-info ui-btn-icon-notext not_header_btn" style="display: none;">Clear</a>
+                <a href="#messagelist_menu" id="btn_messagelist_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="messagelist_menu" class="options_menu" data-role="popup">
+                    <ul id="messagelist_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_messagelist_content" data-theme="b" data-content-theme="b">
+        <div id="btn_newmessage_container"><button id="btn_newmessage" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">New message</button></div>
+        <ul id="messagelist_list" class="mlistview" data-role="listview" data-theme="b" data-inset="true" data-icon="false">
+            <!--<li id="msgitem_0"><a href="javascript:void(0)" class="msg_anchor" data-transition="slide">
+                <div class="msg_item_container">
+                    <div class="msg_name">Joghn Smith - <span id="msgitemnumber_0">40123456789</span><span class="ui-li-count">2</span></div>
+                    <div id="msgtype_0" class="msg_type">SMS</div>
+		</div>
+            </a></li>-->
+        </ul>
+    </div>
+</div>
+<!-- END MessageList Page -->
+
+<!-- Message Page -->
+<div id="page_message" class="all_app_pages" data-role="page" data-url="page_message">
+    <div id="message_header" data-role="header" data-theme="b">
+        <div id="message_additional_header">
+            <div class="additional_header_left">
+                <a id="msg_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="msg_title" class="additional_header_middle">Message</div>
+            <div class="additional_header_right">
+                <a href="#message_menu" id="btn_message_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="message_menu" class="options_menu" data-role="popup">
+                    <ul id="message_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+        <div class="status_container">
+            <div class="status" id="status_message">&nbsp;</div>
+            <div class="curr_user" id="curr_user_message">&nbsp;</div>
+        </div>
+        <div class="clear_float"><!--//--></div>
+    </div>
+    <div role="main" class="ui-content" id="page_message_content" data-theme="b" data-content-theme="b">
+        <div id="msgpick_container" style="display: none;">
+            <input type="text" id="msgpick_input" name="number" data-theme="a" autocapitalize="off">
+            <button id="btn_msgpick" class="ui-btn ui-btn-corner-all ui-btn-b noshadow"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_add_contact_txt.png" alt="add contact"></button>
+            <div id="msg_spacer">&nbsp;</div>
+        </div>
+        <div id="msg_list">
+            <!--<b>Me:</b><p>Hello, how are you? Hello, how are you? Hello, how are you? Hello, how are you? Hello, how are you today?</p><p class="date">Jun 05, 2014 11:59</p><img class="sent_status" src="images/icon_chat_status_green.png" border="0"/>-->
+        </div>
+        <div id="msg_textarea_container">
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+            <div id="msg_gradient">&nbsp;</div>
+            <div id="msg_textarea_left">
+                <!--<textarea id="msg_textarea" class="noshadow" name="msg_textarea" data-theme="a" placeholder="Compose"></textarea>-->
+                <div contenteditable="true" id="msg_textarea" class="noshadow" data-theme="a" placeholder="Compose"></div>
+                <!--<input type="text" id="msg_textarea" name="msg_textarea" data-theme="a" placeholder="Compose"/>-->
+            </div>
+            <div id="msg_textarea_right">
+                <span id="msg_charcount">0</span>
+                <button id="msg_btn_sendfile" class="ui-btn ui-btn-corner-all ui-btn-b noshadow"><img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_sendfile.png"></button>
+                <button id="msg_btn_smiley" class="ui-focus noshadow"><img id="msg_btn_smiley_img" src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/btn_smiley.png"></button>
+                <div id="smiley_container" style="display: none;">
+                    <div id="smiley_title_container">
+                        <span id="smiley_hint"></span>
+                        <button id="msg_btn_smiley_close">X</button>
+                    </div>
+                    <button id="btn_emoti_smiling" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Smiling.gif"></button>
+                    <button id="btn_emoti_sad" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Sad.gif"></button>
+                    <button id="btn_emoti_laughing" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Laughing.gif"></button>
+                    <button id="btn_emoti_winking" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Winking.gif"></button>
+                    <button id="btn_emoti_surprised" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Surprised.gif"></button>
+                    <button id="btn_emoti_straightface" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/StraightFace.gif"></button>
+                    <button id="btn_emoti_worried" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Worried.gif"></button>
+                    <button id="btn_emoti_crying" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Crying.gif"></button>
+                    <button id="btn_emoti_cool" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Cool.gif"></button>
+                    <button id="btn_emoti_angel" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Angel.gif"></button>
+                    <button id="btn_emoti_kiss" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Kiss.gif"></button>
+                    <button id="btn_emoti_idea" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Idea.gif"></button>
+                    <button id="btn_emoti_thinking" class="btn_emoti_icon"><img src="https://www.webvoipphone.com/webphone_online_demo/images/smiley/Thinking.gif"></button>
+                </div>
+                <button id="btn_msgsend" class="ui-btn ui-btn-corner-all ui-btn-b noshadow"><img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_message.png" alt="message"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Message Page -->
+
+<!-- Internal Browser -->
+<div id="page_internalbrowser" class="all_app_pages" data-role="page" data-url="page_internalbrowser">
+    <div id="internalbrowser_header" data-role="header" data-theme="b">
+        <div id="internalbrowser_additional_header">
+            <div class="additional_header_left">
+                <a id="internalbrowser_btnback" class="btn_header_back ui-btn"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="internalbrowser_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#internalbrowser_menu" id="btn_internalbrowser_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="internalbrowser_menu" class="options_menu" data-role="popup">
+                    <ul id="internalbrowser_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_internalbrowser_content" data-theme="b" data-content-theme="b">
+    </div>
+</div>
+<!-- END Internal Browser -->
+
+<!-- Start Page -->
+<div id="page_startpage" class="all_app_pages" data-role="page" data-url="page_startpage">
+    <div id="startpage_header" data-role="header" data-theme="b">
+        <div id="startpage_additional_header">
+            <div class="additional_header_left">
+                <a id="startpage_btnback" class="btn_header_back ui-btn"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="startpage_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#startpage_menu" style="display: none;" id="btn_startpage_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="startpage_menu" class="options_menu" data-role="popup">
+                    <ul id="startpage_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_startpage_content" data-theme="b" data-content-theme="b">
+    </div>
+    <div id="startpage_footer" data-role="footer" data-theme="b">
+        <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        <button id="btn_sp_decline" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Decline</button>
+        <button id="btn_sp_accept" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">OK</button>
+    </div>
+</div>
+<!-- END Start Page -->
+
+<!-- Logview -->
+<div id="page_logview" class="all_app_pages" data-role="page" data-url="page_logview">
+    <div id="logview_header" data-role="header" data-theme="b">
+        <div id="logview_additional_header">
+            <div class="additional_header_left">
+                <a id="logview_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="logview_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#logview_menu" id="btn_logview_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="logview_menu" class="options_menu" data-role="popup">
+                    <ul id="logview_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_logview_content" data-theme="b" data-content-theme="b">
+        <form action="https://rtc.mizu-voip.com:4443/?hsforward=G0MaQVEXSQMUQ0sHABsbGR0cXh4fCFcLQRdaABIbBB9CAgdEC0MdXRQECEQOHh1OFlgEFEcbQgM-&amp;nocache=638926266" name="xlogpush" id="xlogpush" method="post" data-ajax="false">
+            <div id="sendtosupport_container">
+                <button id="btn_loghelp" class="ui-btn ui-btn-corner-all ui-btn-b noshadow" style="display: none;"><img src="https://www.webvoipphone.com/webphone_online_demo/images/icon_help_mark.png"></button>
+                <div id="lview_disable">
+                    <!--<input name="disable_logs" id="disable_logs" type="checkbox">
+                    <label for="disable_logs"> Disable logs after send</label>-->
+                    <input name="disable_logs" id="disable_logs" data-mini="true" data-theme="b" type="checkbox">
+                    <label for="disable_logs" id="label_disable_logs"></label>
+                </div>
+                <!--<a href="javascript:;" id="support_selectall" >Select all</a>-->
+                <a href="mailto:webphone@mizu-voip.com" target="_top" id="sendtosupport_link" style="display: none;" title="Send log to support">Send to support</a>
+                <input type="hidden" id="wplocation" name="wplocation" value="" data-role="none">
+                <input type="hidden" id="filename" name="filename" value="" data-role="none">
+                <input type="submit" id="btn_sendlog" value="Send to support" title="Send log to support" data-rel="back" data-role="none">
+            </div>
+            <!--<div id="log_text"></div>-->
+            <textarea id="log_text" name="log_text"></textarea>
+        </form>
+    </div>
+</div>
+<!-- END Logview -->
+
+<!-- Newuser -->
+<div id="page_newuser" class="all_app_pages" data-role="page" data-url="page_newuser">
+    <div id="newuser_header" data-role="header" data-theme="b">
+        <div id="newuser_additional_header">
+            <div class="additional_header_left">
+                <a id="newuser_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="newuser_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#newuser_menu" id="btn_newuser_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="newuser_menu" class="options_menu" data-role="popup">
+                    <ul id="newuser_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_newuser_content" data-theme="b" data-content-theme="b">
+        <form id="newuser_content_form">
+            <div id="nu_username_container" style="display: none;">
+                <span id="label_nu_username">*Username</span>
+                <input name="nu_username" id="nu_username" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_password_container" style="display: none;">
+                <span id="label_nu_password">*Password</span>
+                <input name="nu_password" id="nu_password" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_passwordverify_container" style="display: none;">
+                <span id="label_nu_passwordverify">*Verify password</span>
+                <input name="nu_passwordverify" id="nu_passwordverify" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_email_container" style="display: none;">
+                <span id="label_nu_email">Email address</span>
+                <input name="nu_email" id="nu_email" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_fullname_container" style="display: none;">
+                <span id="label_nu_fullname">Full name</span>
+                <input name="nu_fullname" id="nu_fullname" value="" type="text">
+            </div>
+            <div id="nu_firstname_container" style="display: none;">
+                <span id="label_nu_firstname">Full name</span>
+                <input name="nu_firstname" id="nu_firstname" value="" type="text">
+            </div>
+            <div id="nu_lastname_container" style="display: none;">
+                <span id="label_nu_lastname">Full name</span>
+                <input name="nu_lastname" id="nu_lastname" value="" type="text">
+            </div>
+            <div id="nu_phone_container" style="display: none;">
+                <span id="label_nu_phone">Phone</span>
+                <input name="nu_phone" id="nu_phone" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_address_container" style="display: none;">
+                <span id="label_nu_address">Address</span>
+                <input name="nu_address" id="nu_address" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_country_container" style="display: none;">
+                <span id="label_nu_country">Country</span>
+                <input name="nu_country" id="nu_country" value="" type="text">
+            </div>
+            <div id="nu_birthday_container" style="display: none;">
+                <span id="label_nu_birthday">Birthday</span>
+                <input name="nu_birthday" id="nu_birthday" value="" type="text" autocapitalize="off">
+            </div>
+            <div id="nu_gender_container" style="display: none;">
+                <span id="label_nu_gender">gender</span>
+                <input name="nu_gender" id="nu_gender" value="" type="text">
+            </div>
+            <div id="nu_fpq_container" style="display: none;">
+                <span id="label_nu_fpq">Forgot password question</span>
+                <input name="nu_fpq" id="nu_fpq" value="" type="text">
+            </div>
+            <div id="nu_fpa_container" style="display: none;">
+                <span id="label_nu_fpa">Forgot password answer</span>
+                <input name="nu_fpa" id="nu_fpa" value="" type="text">
+            </div>
+            <div id="nu_extra_container" style="display: none;">
+                <span id="label_nu_extra">Forgot password answer</span>
+                <input name="nu_extra" id="nu_extra" value="" type="text">
+            </div>
+        </form>
+    </div>
+    <div id="newuser_footer" data-role="footer" data-theme="b" data-position="fixed">
+        <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        <button id="btn_create_newuser" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Create</button>
+        <button id="btn_cancel_newuser" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Cancel</button>
+    </div>
+</div>
+<!-- END Newuser -->
+
+<!-- Smscodeverify -->
+<div id="page_smscodeverify" class="all_app_pages" data-role="page" data-url="page_smscodeverify">
+    <div id="smscodeverify_header" data-role="header" data-theme="b">
+        <div id="smscodeverify_additional_header">
+            <div class="additional_header_left">
+                <a id="smscodeverify_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="smscodeverify_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#smscodeverify_menu" id="btn_smscodeverify_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="smscodeverify_menu" class="options_menu" data-role="popup">
+                    <ul id="smscodeverify_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_smscodeverify_content" data-theme="b" data-content-theme="b">
+        <div id="sms_instructions"></div>
+        <input name="sms_code_field" id="sms_code_field" value="" type="text" autocapitalize="off">
+    </div>
+    <div id="smscodeverify_footer" data-role="footer" data-theme="b" data-position="fixed">
+        <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        <button id="btn_sms_verify" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Create</button>
+        <button id="btn_cancel_smscodeverify" class="ui-btn ui-btn-corner-all ui-btn-b noshadow">Cancel</button>
+    </div>
+</div>
+<!-- END Newuser -->
+
+<!-- Filetransfer -->
+<div id="page_filetransfer" class="all_app_pages" data-role="page" data-url="page_filetransfer">
+    <div id="filetransfer_header" data-role="header" data-theme="b">
+        <div id="filetransfer_additional_header">
+            <div class="additional_header_left">
+                <a id="filetransfer_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="filetransfer_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#filetransfer_menu" id="btn_filetransfer_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="filetransfer_menu" class="options_menu" data-role="popup">
+                    <ul id="filetransfer_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_filetransfer_content" data-theme="b" data-content-theme="b">
+        <div id="filetransf_container">
+            <input type="text" id="filetransfpick_input" name="number" data-theme="a" autocapitalize="off">
+            <button id="btn_filetransfpick" class="ui-btn ui-btn-corner-all ui-btn-b noshadow"><img src="https://www.webvoipphone.com/webphone_online_demo/images/btn_add_contact_txt.png" alt="add contact"></button><br>
+        </div>
+        <div id="ftranf_iframe_container"></div>
+        <div id="ftranf_status"></div>
+        <!--<form action="uploaded" method="post" enctype="multipart/form-data" id="frm_filetransf" name="frm_filetransf">-->
+        <!--<form action="http://www.google.ro" method="post" enctype="multipart/form-data" id="frm_filetransf" name="frm_filetransf">
+            <input type="hidden" name="filepath" value="aaxxaa">
+            <input name="filedata" type="file" />
+            <input type="submit" id="btn_filetransf" value="Send" title="Transfer file" data-theme="b" />
+        </form>-->
+    </div>
+</div>
+<!-- END Filetransfer -->
+
+<!-- Filters Page -->
+<div id="page_filters" class="all_app_pages" data-role="page" data-url="page_filters">
+    <div id="filters_header" data-role="header" data-theme="b">
+        <div id="filters_additional_header">
+            <div class="additional_header_left">
+                <a id="filters_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="filters_title" class="additional_header_middle"></div>
+            <div class="additional_header_right">
+                <a href="#filters_menu" id="btn_filters_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="filters_menu" class="options_menu" data-role="popup">
+                    <ul id="filters_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div role="main" class="ui-content" id="page_filters_content" data-theme="b" data-content-theme="b">
+        <div id="filters_add_section">
+            <div class="filters_label" id="filters_label_add">Add filters</div>
+            <div id="filters_add"><button id="btn_add_filters" class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-plus ui-btn-icon-notext">Add</button></div>
+        </div>
+        <ul id="filters_list" class="mlistview" data-role="listview" data-split-icon="delete" data-split-theme="b" data-theme="b" data-divider-theme="b" data-inset="true">
+            <!--<li data-theme="b">
+                <a id="filteritem_[FID]" class="ch_anchor mlistitem">
+                    <div class="item_container">
+                        <div class="r_what">When number starts with: <span>+40</span></div>
+                        <div class="r_with">Replace with: <span>123</span></div>
+                        <div class="r_minlen">Min length: <span>6</span></div>
+                        <div class="r_maxlen">Max length: <span>12</span></div>
+                    </div>
+                </a>
+                <a id="filtermenu_[FID]" class="ch_menu mlistitem">Delete</a>
+            </li>-->
+        </ul>
+    </div>
+</div>
+<!-- END Filters Page -->
+
+<!-- Accounts Page -->
+<div id="page_accounts" class="all_app_pages" data-role="page" data-url="page_accounts">
+    <div id="accounts_header" data-role="header" data-theme="b">
+        <div id="accounts_additional_header">
+            <div class="additional_header_left">
+                <a id="accounts_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+
+            <div id="accounts_title" class="additional_header_middle">_Accounts</div>
+            
+            <div class="additional_header_right">
+                <a href="#accounts_menu" id="btn_accounts_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="accounts_menu" class="options_menu" data-role="popup">
+                    <ul id="accounts_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_accounts_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <div id="text_instructions"></div>
+        <div id="acc_add">
+            <p id="acc_add_p">_Add account</p>
+            <div id="acc_add_right">
+                <button id="btn_add_acc" class="noshadow ui-btn-inline ui-btn ui-btn-corner-all ui-btn-b ui-icon-plus ui-btn-icon-notext">Add</button>
+            </div>
+        </div>
+        <div id="acc_list"></div>
+    </div>
+</div>
+<!-- END Accounts Page -->
+
+
+<!-- Extra 1 Page -->
+<div id="page_extra1" class="all_app_pages" data-role="page" data-url="page_extra1">
+    <div id="extra1_header" data-role="header" data-theme="b">
+        <div id="extra1_additional_header">
+            <div class="additional_header_left">
+                <a id="extra1_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="extra1_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#extra1_menu" id="btn_extra1_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="extra1_menu" class="options_menu" data-role="popup">
+                    <ul id="extra1_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_extra1_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <p>Page content goes here</p>
+    </div>
+</div>
+<!-- END Extra 1 Page -->
+
+<!-- Extra 2 Page -->
+<div id="page_extra2" class="all_app_pages" data-role="page" data-url="page_extra2">
+    <div id="extra2_header" data-role="header" data-theme="b">
+        <div id="extra2_additional_header">
+            <div class="additional_header_left">
+                <a id="extra2_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="extra2_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#extra2_menu" id="btn_extra2_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="extra2_menu" class="options_menu" data-role="popup">
+                    <ul id="extra2_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_extra2_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <p>Page content goes here</p>
+    </div>
+</div>
+<!-- END Extra 2 Page -->
+
+<!-- Extra 3 Page -->
+<div id="page_extra3" class="all_app_pages" data-role="page" data-url="page_extra3">
+    <div id="extra3_header" data-role="header" data-theme="b">
+        <div id="extra3_additional_header">
+            <div class="additional_header_left">
+                <a id="extra3_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="extra3_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#extra3_menu" id="btn_extra3_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="extra3_menu" class="options_menu" data-role="popup">
+                    <ul id="extra3_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_extra3_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <p>Page content goes here</p>
+    </div>
+</div>
+<!-- END Extra 3 Page -->
+
+<!-- Extra 4 Page -->
+<div id="page_extra4" class="all_app_pages" data-role="page" data-url="page_extra4">
+    <div id="extra4_header" data-role="header" data-theme="b">
+        <div id="extra4_additional_header">
+            <div class="additional_header_left">
+                <a id="extra4_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="extra4_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#extra4_menu" id="btn_extra4_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="extra4_menu" class="options_menu" data-role="popup">
+                    <ul id="extra4_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_extra4_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <p>Page content goes here</p>
+    </div>
+</div>
+<!-- END Extra 4 Page -->
+
+<!-- Extra 5 Page -->
+<div id="page_extra5" class="all_app_pages" data-role="page" data-url="page_extra5">
+    <div id="extra5_header" data-role="header" data-theme="b">
+        <div id="extra5_additional_header">
+            <div class="additional_header_left">
+                <a id="extra5_btnback" class="btn_header_back ui-btn" data-rel="back"><b>&lt;</b>&nbsp;Back</a>
+            </div>
+            <div id="extra5_title" class="additional_header_middle">Info</div>
+            <div class="additional_header_right">
+                <a href="#extra5_menu" id="btn_extra5_menu" data-rel="popup" class="btn_toolbar_menu ui-btn ui-icon-bars ui-btn-icon-notext" data-transition="slidedown">Menu</a>
+
+                <div id="extra5_menu" class="options_menu" data-role="popup">
+                    <ul id="extra5_menu_ul" data-role="listview" data-inset="true" data-icon="false" data-theme="a">
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_line_thick" style="background-color: rgb(59, 59, 59);"><!--//--></div>
+        </div>
+    </div>
+    <div id="page_extra5_content" role="main" class="ui-content" data-theme="b" data-content-theme="b">
+        <p>Page content goes here</p>
+    </div>
+</div>
+<!-- END Extra 5 Page -->
+
+
+<div class="ui-loader ui-corner-all ui-body-b ui-loader-verbose"><span class="ui-icon-loading"></span><h1>Loading..</h1></div><div class="ui-panel-dismiss"></div></div>
+<!-- iframe used for attempting to load a custom protocol -->
+<iframe allow="microphone; camera" style="display:none" height="0" width="0" id="loader"></iframe>
+<div id="EXTERNREQUESTELEM" style="display: none;"></div>
+
+
+<audio id="dtmfTone" src="https://www.webvoipphone.com/webphone_online_demo/sound/rtc_dtmf.wav"></audio><audio id="justbeep_1" src="https://www.webvoipphone.com/webphone_online_demo/sound/beep-01.wav"></audio></body></html>
